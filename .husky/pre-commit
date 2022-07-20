@@ -1,0 +1,6 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+npx reflow pre-commit
+npx --no -- lint-staged --quiet
+npx --no -- pretty-quick --staged
