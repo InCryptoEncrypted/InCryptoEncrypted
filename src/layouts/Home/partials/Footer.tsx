@@ -61,8 +61,8 @@ export function Footer() {
             Subscribe to the newsletter to hear about Polkadot updates and
             events.
           </p>
-          <button className="mt-6 border-2 border-white rounded-full px-12 py-2">
-            Meet with us
+          <button className="mt-6 border border-white hover:border-pink-600 hover:bg-pink-600 hover:text-white font-bold rounded-full px-8 py-2">
+            Subscribe
           </button>
         </div>
       </div>

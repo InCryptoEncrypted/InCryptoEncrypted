@@ -14,6 +14,7 @@ import { Github } from "../components/icons/Github";
 import { Instagram } from "../components/icons/Instagram";
 import { Twitter } from "../components/icons/Twitter";
 import { Globe } from "../containers/Globe";
+import { JoinUs } from "../containers/Sections";
 import { HomeLayout } from "../layouts/Home";
 
 export default function Home() {
@@ -132,9 +133,9 @@ export default function Home() {
         {/* learn more interests */}
         <div className="flex flex-col items-center mt-12 sm:mt-20">
           <h3 className="text-3xl font-light mb-10 text-center">
-            Learn more about InCryptoEncrypted
+            Learn more about EncryptedClan
           </h3>
-          <button className="px-12 py-3 border border-pink-600 font-bold bg-pink-600 text-white hover:bg-pink-600 rounded-full">
+          <button className="px-12 py-3 border border-pink-600 bg-pink-600 text-white hover:bg-transparent hover:text-pink-600 font-bold rounded-full">
             Discover
           </button>
         </div>
@@ -150,8 +151,7 @@ export default function Home() {
             Powering the Polkadot network
           </h3>
           <p className="text-lg sm:text-xl text-center">
-            The DOT token serves three distinct purposes: <br />
-            governance over the network, staking and bonding.
+            The DOT token serves three distinct purposes:
           </p>
         </div>
         {/* technologies heading end */}
@@ -168,7 +168,7 @@ export default function Home() {
               />
             </div>
             <h4 className="text-2xl sm:text-3xl font-bold mb-6">Rust</h4>
-            <p className="text-center">
+            <p className="text-center max-w-2xl">
               New parachains are added by bonding tokens. Outdated or non-useful
               parachains are removed by removing bonded tokens. This is a form
               of proof of stake.
@@ -186,7 +186,7 @@ export default function Home() {
               />
             </div>
             <h4 className="text-2xl sm:text-3xl font-bold mb-6">Substrate</h4>
-            <p className="text-center">
+            <p className="text-center max-w-2xl">
               New parachains are added by bonding tokens. Outdated or non-useful
               parachains are removed by removing bonded tokens. This is a form
               of proof of stake.
@@ -204,7 +204,7 @@ export default function Home() {
               />
             </div>
             <h4 className="text-2xl sm:text-3xl font-bold mb-6">Clarity</h4>
-            <p className="text-center">
+            <p className="text-center max-w-2xl">
               New parachains are added by bonding tokens. Outdated or non-useful
               parachains are removed by removing bonded tokens. This is a form
               of proof of stake.
@@ -216,9 +216,9 @@ export default function Home() {
         {/* learn more technologies */}
         <div className="flex flex-col items-center mt-12 sm:mt-20">
           <h3 className="text-3xl font-light mb-10 text-center">
-            Learn more about InCryptoEncrypted
+            Learn more about the EncryptedClan
           </h3>
-          <button className="px-12 py-3 border border-zinc-50 font-bold bg-zinc-50 text-zinc-800 rounded-full">
+          <button className="px-12 py-3 border border-zinc-50 bg-zinc-50 text-zinc-800 hover:bg-transparent hover:text-white font-bold rounded-full">
             Discover
           </button>
         </div>
@@ -228,33 +228,25 @@ export default function Home() {
 
       {/* goals */}
       <section className="flex flex-col justify-center bg-gradient-to-br from-pink-600 via-pink-600 to-fuchsia-700 text-white px-4 md:px-12 xl:px-40 py-20 sm:py-24">
-        <div className="flex flex-col sm:flex-row space-y-12 sm:space-y-0">
+        <div className="flex flex-col sm:flex-row space-y-12 sm:space-y-0 text-center sm:text-left">
           <div className="sm:w-1/2 flex flex-col items-center sm:block">
-            <h3 className="text-2xl md:text-4xl font-bold lg:w-5/6 mb-10 max-w-xs text-center sm:text-left">
+            <h3 className="text-2xl md:text-4xl font-bold lg:w-5/6 mb-10 max-w-xs">
               An open-source protocol built for everyone
             </h3>
-            <button className="border-2 border-white rounded-full px-16 py-4">
+            <button className="border border-white hover:bg-white hover:text-pink-600 font-bold rounded-full px-12 py-3">
               Meet us
             </button>
           </div>
           <div className="sm:w-1/2 space-y-8">
-            <div className="">
-              {/* <h4 className="text-xl font-bold">Our mission</h4> */}
-              <p className="text-lg font-light">
-                Polkadot is an open-source project founded by the Web3
-                Foundation.
-              </p>
-            </div>
-            <div className="">
-              {/* <h4 className="text-xl font-bold">Our vision</h4> */}
-              <p className="text-lg font-light">
-                Web3 Foundation has commissioned five teams and over 100
-                developers to build Polkadot, including:
-              </p>
-            </div>
+            <p className="text-lg font-light">
+              Polkadot is an open-source project founded by the Web3 Foundation.
+            </p>
+            <p className="text-lg font-light">
+              Web3 Foundation has commissioned five teams and over 100
+              developers to build Polkadot, including:
+            </p>
           </div>
         </div>
-        {/* <div className="h-20 bg-blue-400s"></div> */}
       </section>
       {/* goals end */}
 
@@ -266,7 +258,7 @@ export default function Home() {
             Founded by some of the blockchain industry's foremost builders
           </h3>
           <div className="">
-            <button className="border-2 border-white rounded-full px-20 py-4">
+            <button className="border-2 border-white font-bold rounded-full px-20 py-4">
               Meet us
             </button>
           </div>
@@ -274,19 +266,7 @@ export default function Home() {
       </section>
       {/* socials end */}
 
-      {/* projects */}
-      <section className="px-4 md:px-12 xl:px-40 py-12 sm:py-20">
-        <div className="flex flex-col items-center">
-          <h3 className="text-2xl sm:text-3xl md:text-4xl font-light mb-10">
-            Want to get involved?
-          </h3>
-          <button className="border-2 border-black rounded-full px-14 py-3 mb-6 font-medium">
-            Meet us
-          </button>
-          <p className="text-gray-600">or learn how to build</p>
-        </div>
-      </section>
-      {/* projects end */}
+      <JoinUs />
     </HomeLayout>
   );
 }

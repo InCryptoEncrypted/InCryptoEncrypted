@@ -21,6 +21,29 @@ const variants: Variants = {
   },
 };
 
+const links = [
+  {
+    title: "Community",
+    href: "/community",
+  },
+  {
+    title: "Members",
+    href: "/members",
+  },
+  {
+    title: "About",
+    href: "/about",
+  },
+  {
+    title: "Builds",
+    href: "/builds",
+  },
+  {
+    title: "Contact",
+    href: "/contact",
+  },
+];
+
 export function NavBar() {
   const [open, setOpen] = useState(false);
 
@@ -44,11 +67,11 @@ export function NavBar() {
 
         {/* desktop nav */}
         <ul className="hidden lg:flex space-x-6">
-          <NavLink href="/">Technology</NavLink>
-          <NavLink href="/">Community</NavLink>
-          <NavLink href="/members">Members</NavLink>
-          <NavLink href="/about">About</NavLink>
-          <NavLink href="/">Builds</NavLink>
+          {links.map((link) => (
+            <NavLink key={link.title} href={link.href}>
+              {link.title}
+            </NavLink>
+          ))}
         </ul>
         {/* desktop nav end */}
       </div>
@@ -59,11 +82,11 @@ export function NavBar() {
           animate="show"
           variants={variants}
         >
-          <MobileNavLink href="/">Technology</MobileNavLink>
-          <MobileNavLink href="/">Community</MobileNavLink>
-          <MobileNavLink href="/members">Members</MobileNavLink>
-          <MobileNavLink href="/about">About</MobileNavLink>
-          <MobileNavLink href="/">Builds</MobileNavLink>
+          {links.map((link) => (
+            <MobileNavLink key={link.title} href={link.href}>
+              {link.title}
+            </MobileNavLink>
+          ))}
         </motion.ul>
       )}
     </>
@@ -74,7 +97,7 @@ const NavLink: React.FC<Props> = ({ children, href }) => {
   return (
     <li>
       <Link href={href}>
-        <a className="py-6 text-lg font-semibold text-zinc-500 hover:text-zinc-900">
+        <a className="py-6 text-lg font-light hover:font-base text-zinc-600 hover:text-black hover:underline underline-offset-4 decoration-pink-600">
           {children}
         </a>
       </Link>
@@ -95,7 +118,7 @@ const MobileNavLink: React.FC<Props> = ({ children, href }) => {
   return (
     <motion.li variants={linkVariants}>
       <Link href={href}>
-        <a className="py-2 text-lg font-semibold text-zinc-500 hover:text-zinc-900 block">
+        <a className="py-2 text-lg font-semibold text-zinc-500 hover:text-zinc-900 block text-center">
           {children}
         </a>
       </Link>
