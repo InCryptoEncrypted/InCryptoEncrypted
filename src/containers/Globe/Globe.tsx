@@ -22,7 +22,7 @@ export function Globe() {
   return (
     <motion.div
       ref={ref}
-      className="hiddens relative z-10 lg:ml-auto lg:w-4/5 border-4 border-gray-200 border-dashsed aspect-square rounded-full"
+      className="relative z-10 lg:ml-auto lg:w-4/5 border-4 border-gray-200 border-dashsed aspect-square rounded-full"
       style={{ rotate }}
     >
       <Orb
