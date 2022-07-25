@@ -3,5 +3,11 @@
 @tailwind utilities;
 
 * {
-  @apply transition-colors duration-200;
+  @apply transition-colors duration-200 no-highlight;
+}
+
+@layer components {
+  .no-highlight {
+    -webkit-tap-highlight-color: transparent;
+  }
 }
