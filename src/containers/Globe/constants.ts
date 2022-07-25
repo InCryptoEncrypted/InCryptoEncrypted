@@ -41,10 +41,11 @@ export const orbs = {
   },
   stackersPool: {
     name: "Stackers Pool",
-    image: "/images/oct.png",
+    image: "/images/stackerspool.jpg",
+    className: "rounded-full",
   },
   inCryptoEncrypted: {
     name: "InCryptoEncrypted",
-    image: "/images/oct.png",
+    image: null,
   },
 };
