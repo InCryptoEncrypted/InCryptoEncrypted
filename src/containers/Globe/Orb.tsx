@@ -35,7 +35,7 @@ export function Orb({ position, orb, globeRect, rotate }: OrbProps) {
 
     x.set(setX(position.x));
     y.set(setY(position.y));
-  }, [rect, globeRect, position]);
+  }, [rect, globeRect, position, x, y]);
 
   return (
     <motion.div
@@ -52,7 +52,7 @@ export function Orb({ position, orb, globeRect, rotate }: OrbProps) {
       <div className="hidden group-hover:block absolute -top-2 -translate-y-full px-4 py-0.5 text-xs font-medium border border-gray-100 bg-zinc-50 rounded-lg whitespace-nowrap">
         {orb.name}
       </div>
-      <Image src={orb.image} width={60} height={60} />
+      <Image src={orb.image} width={60} height={60} alt={orb.name} />
     </motion.div>
   );
 }

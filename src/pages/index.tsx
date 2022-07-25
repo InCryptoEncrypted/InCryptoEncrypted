@@ -164,6 +164,7 @@ export default function Home() {
                 src={`/images/rust.png`}
                 width={128}
                 height={128}
+                alt="Rust"
                 className="object-cover object-center transition-transform duration-500 scale-[.85] group-hover:scale-90"
               />
             </div>
@@ -182,6 +183,7 @@ export default function Home() {
                 src={`/images/substrate.png`}
                 width={128}
                 height={128}
+                alt="Substrate"
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-110"
               />
             </div>
@@ -200,6 +202,7 @@ export default function Home() {
                 src={`/images/clarity.png`}
                 width={128}
                 height={128}
+                alt="Clarity"
                 className="object-cover object-center invert transition-transform duration-500 group-hover:scale-110"
               />
             </div>
@@ -255,7 +258,7 @@ export default function Home() {
         <div className="absolute inset-0 -z-10 bg-cover bg-center bg-[url(/images/group-4.jpeg)] transition-transform duration-1000 sm:group-hover:scale-110"></div>
         <div className="absolute inset-0 px-4 sm:px-12 lg:px-40 flex flex-col justify-center">
           <h3 className="text-4xl md:text-6xl font-bold lg:w-5/6 mb-12">
-            Founded by some of the blockchain industry's foremost builders
+            Founded by some of the blockchain industry&apos; s foremost builders
           </h3>
           <div className="">
             <button className="border-2 border-white font-bold rounded-full px-20 py-4">

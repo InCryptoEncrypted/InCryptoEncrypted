@@ -67,7 +67,7 @@ function MembersList({ members, select }: MembersListProp) {
       {members.map((member, i) => (
         <motion.div
           key={member.image}
-          className="w-16 h-16 sm:w-32 sm:h-32 md:w-28 md:h-28 rounded-full cursor-pointer mx-auto"
+          className="relative w-16 h-16 sm:w-32 sm:h-32 md:w-28 md:h-28 rounded-full cursor-pointer mx-auto"
           variants={memberVariants}
           animate="animate"
           whileHover={{
@@ -83,8 +83,8 @@ function MembersList({ members, select }: MembersListProp) {
           <Image
             className="object-cover rounded-full"
             src={member.image}
-            width={160}
-            height={160}
+            layout="fill"
+            alt={member.name}
           />
         </motion.div>
       ))}
@@ -114,6 +114,7 @@ function MemberItem({ member, deselect }: MembersItemProp) {
             className="object-cover object-center rounded-full"
             src={member.image}
             layout="fill"
+            alt={member.name}
           />
         </motion.div>
         <div className="flex justify-center mt-6 sm:mt-8">
