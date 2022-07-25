@@ -11,5 +11,6 @@ export type SpherePosition = Record<Axis, Position>;
 
 export type OrbItem = {
   name: string;
-  image: string;
+  image: string | null;
+  className?: string;
 };

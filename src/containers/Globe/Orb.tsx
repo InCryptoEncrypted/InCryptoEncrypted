@@ -1,3 +1,4 @@
+import { ArrowsExpandIcon } from "@heroicons/react/solid";
 import {
   motion,
   MotionValue,
@@ -52,7 +53,25 @@ export function Orb({ position, orb, globeRect, rotate }: OrbProps) {
       <div className="hidden group-hover:block absolute -top-2 -translate-y-full px-4 py-0.5 text-xs font-medium border border-gray-100 bg-zinc-50 rounded-lg whitespace-nowrap">
         {orb.name}
       </div>
-      <Image src={orb.image} width={60} height={60} alt={orb.name} />
+      {orb.image === null ? (
+        <span
+          className={`
+          flex items-center justify-center h-14 w-14 rounded-full text-lg font-bold
+          bg-zinc-800 text-white
+          transition-transform group-hover:scale-110 group-hover:rotate-[135deg] duration-1000
+      `}
+        >
+          <ArrowsExpandIcon className="w-8 h-8" />
+        </span>
+      ) : (
+        <Image
+          className={orb.className}
+          src={orb.image}
+          width={60}
+          height={60}
+          alt={orb.name}
+        />
+      )}
     </motion.div>
   );
 }
