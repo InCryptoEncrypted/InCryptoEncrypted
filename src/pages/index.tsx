@@ -68,7 +68,7 @@ export default function Home() {
         {/* cta end */}
 
         {/* illustration */}
-        <div className="lg:w-1/2 py-20 px-12 lg:px-0">
+        <div className="hidden lg:block lg:w-1/2 py-20 px-12 lg:px-0">
           <Globe />
         </div>
         {/* illustration end */}
@@ -76,7 +76,7 @@ export default function Home() {
       {/* hero end */}
 
       {/* interests */}
-      <section className="px-4 md:px-12 xl:px-40 py-20">
+      <section className="px-4 md:px-12 xl:px-40 lg:pt-20 pb-20">
         {/* interest cards */}
         <div className="grid gap-4 sm:gap-12 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
           <InterestCard
