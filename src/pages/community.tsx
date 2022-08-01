@@ -8,7 +8,7 @@ export default function Community() {
         <div className="absolute inset-0 -z-10 bg-cover bg-center bg-[url(/images/hub-4.jpeg)] transition-transform duration-1000 sm:group-hover:scale-110"></div>
         <div className="absolute inset-0 px-4 sm:px-12 lg:px-40 flex flex-col justify-center">
           <p className="text-4xl md:text-6xl font-bold lg:w-5/6 mb-12">
-            Founded by some of the blockchain industry&apos;s foremost builders
+            The next-level multichain network
           </p>
           <div className="">
             <button className="border-2 border-white rounded-full px-20 py-4">
@@ -22,7 +22,7 @@ export default function Community() {
         <div className="absolute inset-0 -z-10 bg-cover bg-center bg-[url(/images/hub-2.jpeg)] transition-transform duration-1000 sm:group-hover:scale-110"></div>
         <div className="absolute inset-0 px-4 sm:px-12 lg:px-40 flex flex-col justify-center items-end">
           <p className="text-4xl md:text-6xl font-bold lg:w-5/6 mb-12 text-right">
-            Founded by some of the blockchain industry&apos;s foremost builders
+            Blockchain development
           </p>
           <div className="">
             <button className="border-2 border-white rounded-full px-20 py-4">
@@ -36,7 +36,7 @@ export default function Community() {
         <div className="absolute inset-0 -z-10 bg-cover bg-center bg-[url(/images/hub-1.jpeg)] transition-transform duration-1000 sm:group-hover:scale-110"></div>
         <div className="absolute inset-0 px-4 sm:px-12 lg:px-40 flex flex-col justify-center">
           <p className="text-4xl md:text-6xl font-bold lg:w-5/6 mb-12">
-            Founded by some of the blockchain industry&apos;s foremost builders
+            Smart contracts and DApps
           </p>
           <div className="">
             <button className="border-2 border-white rounded-full px-20 py-4">
@@ -50,7 +50,7 @@ export default function Community() {
         <div className="absolute inset-0 -z-10 bg-cover bg-center bg-[url(/images/hub-6.jpeg)] transition-transform duration-1000 sm:group-hover:scale-110"></div>
         <div className="absolute inset-0 px-4 sm:px-12 lg:px-40 flex flex-col justify-center items-end">
           <p className="text-4xl md:text-6xl font-bold lg:w-5/6 mb-12 text-right">
-            Founded by some of the blockchain industry&apos;s foremost builders
+            Hands-on training and tutorials
           </p>
           <div className="">
             <button className="border-2 border-white rounded-full px-20 py-4">
@@ -64,7 +64,7 @@ export default function Community() {
         <div className="absolute inset-0 -z-10 bg-cover bg-center bg-[url(/images/hub-3.jpeg)] transition-transform duration-1000 sm:group-hover:scale-110"></div>
         <div className="absolute inset-0 px-4 sm:px-12 lg:px-40 flex flex-col justify-center">
           <p className="text-4xl md:text-6xl font-bold lg:w-5/6 mb-12">
-            Founded by some of the blockchain industry&apos;s foremost builders
+            Powerful community
           </p>
           <div className="">
             <button className="border-2 border-white rounded-full px-20 py-4">
