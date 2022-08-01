@@ -137,6 +137,18 @@ const members: Member[] = [
     name: "Ebizimor",
   },
   {
+    image: "/images/members/theophilus.jpg",
+    name: "Theophilu",
+  },
+  {
+    image: "/images/members/abraham-ekio.jpg",
+    name: "Abraham Ekio",
+  },
+  {
+    image: "/images/members/ebitare.jpg",
+    name: "Ebitare",
+  },
+  {
     image: "/images/members/eric.jpg",
     name: "Eric Afes",
   },
