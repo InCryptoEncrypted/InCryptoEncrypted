@@ -58,7 +58,7 @@ export function Footer() {
             </a>
           </div>
           <p className="text-xs md:text-base mt-6 text-center sm:text-left">
-            Subscribe to the newsletter to hear about Polkadot updates and
+            Subscribe to our newsletter to receive updates on our activities and
             events.
           </p>
           <button className="mt-6 border border-white hover:border-pink-600 hover:bg-pink-600 hover:text-white font-bold rounded-full px-8 py-2">
